@@ -8,9 +8,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        dans: resolve(__dirname, 'projects/dans.html'),
-        catsMeow: resolve(__dirname, 'projects/cats-meow.html'),
-        strikeNight: resolve(__dirname, 'projects/strike-night.html'),
+        dans: resolve(__dirname, 'dans.html'),
+        catsMeow: resolve(__dirname, 'cats-meow.html'),
+        strikeNight: resolve(__dirname, 'strike-night.html'),
       },
     },
   },
