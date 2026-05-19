@@ -5,56 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Jake Wiseman is a design-focused portfolio site built with HTML and Tailwind CSS."
+      content="Jake Wiseman is a design-focused portfolio site built with HTML and CSS."
     />
     <link rel="icon" type="image/svg+xml" href="./src/assets/peacock_logo.svg" />
     <link rel="stylesheet" href="./src/style.css" />
     <title>Jake Wiseman | Design Portfolio</title>
   </head>
-  <body class="min-h-screen bg-brand-cream text-brand-charcoal">
-    <header
-      class="sticky top-0 z-50 border-b-4 border-brand-indigo bg-brand-indigo text-brand-cream"
-    >
-      <nav
-        class="mx-auto flex w-full max-w-6xl flex-col gap-5 px-6 py-5 md:flex-row md:items-center md:justify-between"
-        aria-label="Primary navigation"
-      >
-        <a class="flex items-center gap-4" href="./" aria-label="Jake Wiseman home">
-          <img class="h-12 w-12 brightness-0 invert" src="./src/assets/peacock_logo.svg" alt="" />
-          <span class="font-serif text-lg font-bold leading-none tracking-normal md:text-3xl">
+  <body class="site-body">
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="brand-link" href="./" aria-label="Jake Wiseman home">
+          <img class="brand-mark" src="./src/assets/peacock_logo.svg" alt="" />
+          <span class="brand-name">
             Jake Wiseman
           </span>
         </a>
 
-        <div class="flex items-center gap-6 text-sm font-bold uppercase tracking-normal md:gap-8">
-          <a class="transition hover:text-brand-yellow" href="#skills">Skills</a>
-          <a class="transition hover:text-brand-yellow" href="#work">Work</a>
-          <a class="transition hover:text-brand-yellow" href="#contact">Contact</a>
+        <div class="nav-links">
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#work">Work</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="relative isolate overflow-hidden">
-        <div class="absolute -right-24 top-16 h-72 w-72 rounded-full bg-brand-blue/20"></div>
-        <div class="absolute bottom-10 left-6 h-36 w-36 rounded-full bg-brand-yellow/45"></div>
-        <div class="absolute bottom-20 right-16 h-28 w-28 rounded-full bg-brand-pink/20"></div>
+      <section class="home-hero">
+        <div class="hero-orb hero-orb-blue"></div>
+        <div class="hero-orb hero-orb-yellow"></div>
+        <div class="hero-orb hero-orb-pink"></div>
 
-        <div
-          class="relative mx-auto grid min-h-[calc(100vh-96px)] w-full max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-[1.08fr_0.92fr]"
-        >
+        <div class="home-hero-inner">
           <div>
-            <p class="mb-5 text-sm font-black uppercase tracking-normal text-brand-blue">
+            <p class="section-eyebrow section-eyebrow-blue home-eyebrow">
               Design portfolio
             </p>
-            <h1 class="max-w-3xl text-6xl font-black leading-18 tracking-normal md:text-6xl">
+            <h1 class="home-title">
               Designing things that work.
             </h1>
-            <p class="mt-8 max-w-2xl font-serif text-2xl leading-9 text-brand-charcoal md:text-3xl">
+            <p class="home-lede">
               Hello! I'm Jake Wiseman, a designer focused on finding creative solutions and tacking challenging problems.
             </p>
 
-            <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <div class="button-row">
               <a class="button button-filled" href="#work">View Work</a>
               <a class="button button-outline" href="mailto:hello@jakewiseman.com">
                 Contact Me
@@ -71,17 +64,17 @@
         </div>
       </section>
 
-      <section id="skills" class="border-y-4 border-brand-charcoal bg-brand-yellow py-16">
-        <div class="mx-auto w-full max-w-6xl px-6">
-          <p class="mb-4 text-sm font-black uppercase tracking-normal text-brand-indigo">
+      <section id="skills" class="skills-section">
+        <div class="section-inner">
+          <p class="section-eyebrow section-eyebrow-indigo">
             Skills
           </p>
-          <h2 class="max-w-3xl text-5xl font-black leading-none tracking-normal md:text-6xl">
+          <h2 class="section-title">
             Tools I use to build creative things.
           </h2>
         </div>
 
-        <div class="carousel mt-12" aria-label="Design and development tools">
+        <div class="carousel carousel-spaced" aria-label="Design and development tools">
           <div class="carousel-track">
             <div class="skill-icon">
               <img src="./src/assets/Adobe_Photoshop_CC_icon.svg" alt="" />
@@ -139,21 +132,21 @@
         </div>
       </section>
 
-      <section id="work" class="bg-brand-cream py-20">
-        <div class="mx-auto w-full max-w-6xl px-6">
-          <p class="mb-4 text-sm font-black uppercase tracking-normal text-brand-blue">
+      <section id="work" class="work-section">
+        <div class="section-inner">
+          <p class="section-eyebrow section-eyebrow-blue">
             Work
           </p>
-          <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <h2 class="max-w-3xl text-5xl font-black leading-none tracking-normal md:text-6xl">
+          <div class="work-heading-row">
+            <h2 class="section-title">
               Projects I've Completed
             </h2>
-            <p class="max-w-sm font-serif text-xl leading-8">
+            <p class="section-copy">
               A mix of different branding, web, and design packages.
             </p>
           </div>
 
-          <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div class="work-grid">
             <a class="work-card work-card-dans" href="./dans.html">
               <span>01</span>
               <img src="./src/assets/Dans/dans.svg" alt="Dan's logo" />
@@ -178,26 +171,26 @@
         </div>
       </section>
 
-      <section id="contact" class="border-t-4 border-brand-charcoal bg-brand-indigo py-16 text-brand-cream">
-        <div class="mx-auto grid w-full max-w-6xl gap-10 px-6 lg:grid-cols-[1fr_0.8fr] lg:items-end">
+      <section id="contact" class="contact-section">
+        <div class="contact-inner">
           <div>
-            <p class="mb-4 text-sm font-black uppercase tracking-normal text-brand-yellow">
+            <p class="section-eyebrow section-eyebrow-yellow">
               Contact
             </p>
-            <h2 class="max-w-3xl text-4xl font-black leading-none tracking-normal md:text-6xl">
+            <h2 class="contact-title">
               Want to create something memorable?
             </h2>
-            <p class="mt-6 max-w-2xl font-serif text-xl leading-8 text-brand-cream/90">
+            <p class="contact-lede">
               I'm available for design projects, portfolio collaborations, and creative work that needs a clean visual direction.
             </p>
           </div>
 
           <div class="contact-card">
-            <p class="text-sm font-black uppercase tracking-normal text-brand-blue pb-4">Get in touch</p>
-            <p class="font-serif text-lg leading-7">
+            <p class="contact-card-eyebrow">Get in touch</p>
+            <p class="contact-card-copy">
               Send me an email with a project, timeline, and how I can help you design something great.
             </p>
-            <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+            <div class="contact-actions">
               <a class="button button-light" href="mailto:wisejakey@gmail.com">Email Me</a>
             </div>
           </div>
@@ -205,13 +198,13 @@
       </section>
     </main>
 
-    <footer class="bg-brand-charcoal py-8 text-brand-cream">
-      <div class="mx-auto flex w-full max-w-6xl flex-col gap-4 px-6 text-sm md:flex-row md:items-center md:justify-between">
-        <a class="flex items-center gap-3 font-serif text-xl font-bold" href="./">
-          <img class="h-8 w-8 brightness-0 invert" src="./src/assets/peacock_logo.svg" alt="" />
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="footer-brand" href="./">
+          <img class="footer-logo" src="./src/assets/peacock_logo.svg" alt="" />
           Jake Wiseman
         </a>
-        <p>© 2026 Jake Wiseman. Built with HTML and Tailwind CSS.</p>
+        <p>© 2026 Jake Wiseman. Built with HTML and CSS.</p>
       </div>
     </footer>
   </body>
